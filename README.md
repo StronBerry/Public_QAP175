@@ -1,2 +1,2 @@
 # Public_QAP175
-This is a test of creation Readme.md
+Will be used to publish the results of the first steps in learning Phyton
