@@ -1,0 +1,31 @@
+#tractors_count = input("Сколько тракторов: ")
+#bags_count = input("Сколько мешков картошки: ")
+#multiplier = input("Введите множитель: ")
+#print(f"За прошедший месяц было продано {bags_count} мешков картошки и {tractors_count} тракторов\n" * int(multiplier))
+
+# Ввод данных
+while True:
+    try:
+        num_tractors = int(input("Введите количество проданных тракторов: "))
+        break
+    except ValueError:
+        print("Вы ввели нецелое число. Введите целое число:")
+
+while True:
+    try:
+        num_bags = int(input("Введите количество проданных мешков картошки: "))
+        break
+    except ValueError:
+        print("Вы ввели нецелое число. Введите целое число:")
+
+while True:
+    try:
+        multiplier = int(input("Введите множитель для повторения строки: "))
+        break
+    except ValueError:
+        print("Вы ввели нецелое число. Введите целое число:")
+
+# Вывод строки
+print(f"За прошедший месяц было продано {num_bags} мешков картошки и {num_tractors} тракторов\n" * int(multiplier))
+
+
