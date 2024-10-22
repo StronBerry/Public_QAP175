@@ -20,3 +20,14 @@ def sales_stats(sales_data, **kwargs):
         return (None, None)
 
     return (total_revenue, total_quantity)
+
+# sales_data = [('Apple', 10, 0.5), ('Orange', 5, 0.6)]
+
+# print(sales_stats(sales_data, revenue=True))
+# # (8.0, None)
+
+# print(sales_stats(sales_data, quantity=True))
+# # (None, {'Apple': 10, 'Orange': 5})
+
+# print(sales_stats(sales_data, revenue=True, quantity=True))
+# # (8.0, {'Apple': 10, 'Orange': 5})
